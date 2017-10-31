@@ -1,0 +1,36 @@
+html, body{
+	margin:0;
+	padding:0;
+	background: $white;
+	background: $white;
+	font-family: $fixed-font-family, $base-font-family;
+	font-weight: $base-font-weight;
+	font-size: $base-font-size;
+	line-height: $base-line-height;
+	color: $black;
+}
+
+a {
+	color: inherit;
+
+	&:hover{
+		color: inherit;
+		text-decoration: none;
+	}
+
+}
+
+ul {
+	padding:0;
+	margin:0;
+	list-style: none;
+}
+
+.right{
+	float: right;
+}
+
+.show{
+	visibility: visible !important;
+	opacity: 1 !important;
+}

@@ -1,0 +1,122 @@
+header {
+    color: $white;
+    
+    .header-info{
+        background-color: $blue;
+        color: $white;
+        text-transform: uppercase;
+        font-size: 10px;
+        letter-spacing: 0.1px;
+        padding: 11px 0;
+
+        .tel-info{
+
+            i{
+                display: block;
+                float: left;
+                font-size: 19px;
+                margin-right: 12px;
+                padding-top: 3px;
+            }
+
+            p{
+                font-weight: $medium;
+                margin-bottom: 3px;
+            }
+
+            a{
+                font-size: 11px;
+            }
+
+        }
+
+        .cotizacion{
+            border: 0.5px solid;
+            border-radius: 4px;
+            text-align: center;
+            padding: 7px 20px;
+            width: max-content;
+            float: right;
+
+            p{
+                margin: 0;
+
+                span{
+                    font-weight: $bold;
+                }
+
+            }
+
+        }
+        
+    }
+    
+    .header-main{
+        text-align: center;
+        
+        .header-bg{
+            position: absolute;
+        }
+        
+        .menu{
+            padding: 20px 0;
+            
+            .logo{
+                position: absolute;
+                left: 0;
+            }
+            
+            .menu-links{
+                display: inline-block;
+                border-bottom: 1px solid;
+                margin: 30px 0;
+
+                li{
+                    display: inline-block;
+                    
+                    a{
+                        display: block;
+                        text-transform: uppercase;
+                        font-size: 13px;
+                        padding: 10px 30px;
+                    }
+                
+                }
+               
+            }
+            
+        }
+        
+        .content{
+            width: 60%;
+            margin: 0 auto;
+            
+            .heading{
+                margin: 0;
+                font-size: 50px;
+                font-weight: 800;
+                letter-spacing: 2.7px;
+                border-bottom: 1px solid;
+                padding: 0 0 12px;
+                margin-bottom: 15px;   
+            }
+            
+            p{
+                font-size: 20px;
+                font-weight: $medium;
+                line-height: 1.3;
+                letter-spacing: 1.1px;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+                
+                span{
+                    font-weight: $bold;
+                }
+            
+            }
+            
+        }
+        
+    }
+    
+}
