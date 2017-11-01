@@ -1,3 +1,136 @@
 .page-home {
 
+    .form-tabs{
+        
+        .nav-pills{
+            text-align: center;
+        
+            li{
+                width: 7%;
+                background-color: $white;
+                color: $dark-gray;
+                border-radius: 5px;
+                margin: 0 4px;
+                float: none;
+                display: inline-block;
+                
+                a{
+                    text-transform: uppercase;
+                    font-size: 10px;
+                    font-weight: $medium;
+                    letter-spacing: -0.3px;
+                    padding: 10px 0;
+                    padding-top: 40px;
+                    background-repeat: no-repeat;
+                    background-position: 29px 13px;
+                    
+                    &.admisiones{background-image: url(../img/tabs-icons/admisiones.png);background-position: 30px 10px;}
+                    &.aereos{background-image: url(../img/tabs-icons/aereos.png);}
+                    &.autos{background-image: url(../img/tabs-icons/autos.png);}
+                    &.circuitos{background-image: url(../img/tabs-icons/circuitos.png);}
+                    &.cruceros{background-image: url(../img/tabs-icons/cruceros.png);}
+                    &.hosteleria{background-image: url(../img/tabs-icons/hosteleria.png);background-position: 27px 16px;}
+                    &.disney{background-image: url(../img/tabs-icons/disney.png);background-position: 29px 9px;}
+                    &.universal{background-image: url(../img/tabs-icons/universal.png);}
+                    &.paquetes{background-image: url(../img/tabs-icons/paquetes.png);background-position: 28px 16px;}
+                    &.servicios{background-image: url(../img/tabs-icons/servicios.png);background-position: 26px 15px;}
+                    &.traslados{background-image: url(../img/tabs-icons/traslados.png);background-position: 20px 15px;}
+                    &.trenes{background-image: url(../img/tabs-icons/trenes.png);}
+                }
+                
+                &.active{
+                    
+                    a{
+                    background-color: $light-blue;
+                         &.admisiones{background-image: url(../img/tabs-icons/admisiones-active.png);}
+                        &.aereos{background-image: url(../img/tabs-icons/aereos-active.png);}
+                        &.autos{background-image: url(../img/tabs-icons/autos-active.png);}
+                        &.circuitos{background-image: url(../img/tabs-icons/circuitos-active.png);}
+                        &.cruceros{background-image: url(../img/tabs-icons/cruceros-active.png);}
+                        &.hosteleria{background-image: url(../img/tabs-icons/hosteleria-active.png);}
+                        &.disney{background-image: url(../img/tabs-icons/disney-active.png);}
+                        &.universal{background-image: url(../img/tabs-icons/universal-active.png);}
+                        &.paquetes{background-image: url(../img/tabs-icons/paquetes-active.png);}
+                        &.servicios{background-image: url(../img/tabs-icons/servicios-active.png);}
+                        &.traslados{background-image: url(../img/tabs-icons/traslados-active.png);}
+                        &.trenes{background-image: url(../img/tabs-icons/trenes-active.png);}
+                    }
+                    
+                }
+
+            }   
+            
+        }
+        
+        .tab-content{
+            width: 100%;
+            height: 78px;
+            background-color: white;
+            transform: translatey(-3px);
+            padding: 15px;
+            
+            form{
+                
+                label{
+                    display: block;
+                    font-size: 11px;
+                    font-weight: $bold;
+                    letter-spacing: 0.6px;
+                    color: $dark-gray;
+                    text-transform: uppercase;
+                }
+                
+                select{
+                    width: 100%;
+                    padding: 15px 12px;
+                    border-radius: 4px;
+                    background-color: #f7f7f7;
+                    border: solid 0.5px #d0d0d0;
+                    color: $light-gray;
+                    font-size: 12px;
+                    letter-spacing: 0.5px;
+                    -webkit-appearance: none;
+                }
+                
+                .option{
+                    width: 28%;
+                    float: left;
+                    margin-right: 10px;
+                    position: relative;
+                    
+                    .select-icon{
+                        position: absolute;
+                        top: 34px;
+                        right: 15px;
+                        color: #00adee;
+                        font-size: 11px;
+                    }
+                    
+                    &.habitaciones{
+                        width: 20.5%;
+                    }
+                    
+                    &.fecha{
+                        @extend .habitaciones;
+                        
+                        select{
+                            text-transform: uppercase;
+                            text-indent: 22px;
+                            background-image: url(../img/tabs-icons/calendar.png);
+                            background-repeat: no-repeat;
+                            background-position: 9px 13px;
+                        }
+                    }
+                    
+                    &.mercado{
+                        margin: 0;
+                    }
+                    
+                }
+            }
+            
+        }
+        
+    }
+    
 }

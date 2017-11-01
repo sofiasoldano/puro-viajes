@@ -138,8 +138,9 @@ header .header-main .menu .menu-links li a {
 header .header-main .content {
   width: 60%;
   margin: 0 auto;
+  margin-bottom: 80px;
 }
-/* line 94, ../sass/partials/_header.scss */
+/* line 95, ../sass/partials/_header.scss */
 header .header-main .content .heading {
   margin: 0;
   font-size: 50px;
@@ -149,7 +150,7 @@ header .header-main .content .heading {
   padding: 0 0 12px;
   margin-bottom: 15px;
 }
-/* line 104, ../sass/partials/_header.scss */
+/* line 105, ../sass/partials/_header.scss */
 header .header-main .content p {
   font-size: 20px;
   font-weight: 600;
@@ -158,9 +159,201 @@ header .header-main .content p {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-/* line 112, ../sass/partials/_header.scss */
+/* line 113, ../sass/partials/_header.scss */
 header .header-main .content p span {
   font-weight: 700;
+}
+
+/* line 5, ../sass/pages/_home.scss */
+.page-home .form-tabs .nav-pills {
+  text-align: center;
+}
+/* line 8, ../sass/pages/_home.scss */
+.page-home .form-tabs .nav-pills li {
+  width: 7%;
+  background-color: #ffffff;
+  color: #6b7175;
+  border-radius: 5px;
+  margin: 0 4px;
+  float: none;
+  display: inline-block;
+}
+/* line 17, ../sass/pages/_home.scss */
+.page-home .form-tabs .nav-pills li a {
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+  padding: 10px 0;
+  padding-top: 40px;
+  background-repeat: no-repeat;
+  background-position: 29px 13px;
+}
+/* line 27, ../sass/pages/_home.scss */
+.page-home .form-tabs .nav-pills li a.admisiones {
+  background-image: url(../img/tabs-icons/admisiones.png);
+  background-position: 30px 10px;
+}
+/* line 28, ../sass/pages/_home.scss */
+.page-home .form-tabs .nav-pills li a.aereos {
+  background-image: url(../img/tabs-icons/aereos.png);
+}
+/* line 29, ../sass/pages/_home.scss */
+.page-home .form-tabs .nav-pills li a.autos {
+  background-image: url(../img/tabs-icons/autos.png);
+}
+/* line 30, ../sass/pages/_home.scss */
+.page-home .form-tabs .nav-pills li a.circuitos {
+  background-image: url(../img/tabs-icons/circuitos.png);
+}
+/* line 31, ../sass/pages/_home.scss */
+.page-home .form-tabs .nav-pills li a.cruceros {
+  background-image: url(../img/tabs-icons/cruceros.png);
+}
+/* line 32, ../sass/pages/_home.scss */
+.page-home .form-tabs .nav-pills li a.hosteleria {
+  background-image: url(../img/tabs-icons/hosteleria.png);
+  background-position: 27px 16px;
+}
+/* line 33, ../sass/pages/_home.scss */
+.page-home .form-tabs .nav-pills li a.disney {
+  background-image: url(../img/tabs-icons/disney.png);
+  background-position: 29px 9px;
+}
+/* line 34, ../sass/pages/_home.scss */
+.page-home .form-tabs .nav-pills li a.universal {
+  background-image: url(../img/tabs-icons/universal.png);
+}
+/* line 35, ../sass/pages/_home.scss */
+.page-home .form-tabs .nav-pills li a.paquetes {
+  background-image: url(../img/tabs-icons/paquetes.png);
+  background-position: 28px 16px;
+}
+/* line 36, ../sass/pages/_home.scss */
+.page-home .form-tabs .nav-pills li a.servicios {
+  background-image: url(../img/tabs-icons/servicios.png);
+  background-position: 26px 15px;
+}
+/* line 37, ../sass/pages/_home.scss */
+.page-home .form-tabs .nav-pills li a.traslados {
+  background-image: url(../img/tabs-icons/traslados.png);
+  background-position: 20px 15px;
+}
+/* line 38, ../sass/pages/_home.scss */
+.page-home .form-tabs .nav-pills li a.trenes {
+  background-image: url(../img/tabs-icons/trenes.png);
+}
+/* line 43, ../sass/pages/_home.scss */
+.page-home .form-tabs .nav-pills li.active a {
+  background-color: #00adee;
+}
+/* line 45, ../sass/pages/_home.scss */
+.page-home .form-tabs .nav-pills li.active a.admisiones {
+  background-image: url(../img/tabs-icons/admisiones-active.png);
+}
+/* line 46, ../sass/pages/_home.scss */
+.page-home .form-tabs .nav-pills li.active a.aereos {
+  background-image: url(../img/tabs-icons/aereos-active.png);
+}
+/* line 47, ../sass/pages/_home.scss */
+.page-home .form-tabs .nav-pills li.active a.autos {
+  background-image: url(../img/tabs-icons/autos-active.png);
+}
+/* line 48, ../sass/pages/_home.scss */
+.page-home .form-tabs .nav-pills li.active a.circuitos {
+  background-image: url(../img/tabs-icons/circuitos-active.png);
+}
+/* line 49, ../sass/pages/_home.scss */
+.page-home .form-tabs .nav-pills li.active a.cruceros {
+  background-image: url(../img/tabs-icons/cruceros-active.png);
+}
+/* line 50, ../sass/pages/_home.scss */
+.page-home .form-tabs .nav-pills li.active a.hosteleria {
+  background-image: url(../img/tabs-icons/hosteleria-active.png);
+}
+/* line 51, ../sass/pages/_home.scss */
+.page-home .form-tabs .nav-pills li.active a.disney {
+  background-image: url(../img/tabs-icons/disney-active.png);
+}
+/* line 52, ../sass/pages/_home.scss */
+.page-home .form-tabs .nav-pills li.active a.universal {
+  background-image: url(../img/tabs-icons/universal-active.png);
+}
+/* line 53, ../sass/pages/_home.scss */
+.page-home .form-tabs .nav-pills li.active a.paquetes {
+  background-image: url(../img/tabs-icons/paquetes-active.png);
+}
+/* line 54, ../sass/pages/_home.scss */
+.page-home .form-tabs .nav-pills li.active a.servicios {
+  background-image: url(../img/tabs-icons/servicios-active.png);
+}
+/* line 55, ../sass/pages/_home.scss */
+.page-home .form-tabs .nav-pills li.active a.traslados {
+  background-image: url(../img/tabs-icons/traslados-active.png);
+}
+/* line 56, ../sass/pages/_home.scss */
+.page-home .form-tabs .nav-pills li.active a.trenes {
+  background-image: url(../img/tabs-icons/trenes-active.png);
+}
+/* line 65, ../sass/pages/_home.scss */
+.page-home .form-tabs .tab-content {
+  width: 100%;
+  height: 78px;
+  background-color: white;
+  transform: translatey(-3px);
+  padding: 15px;
+}
+/* line 74, ../sass/pages/_home.scss */
+.page-home .form-tabs .tab-content form label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  color: #6b7175;
+  text-transform: uppercase;
+}
+/* line 83, ../sass/pages/_home.scss */
+.page-home .form-tabs .tab-content form select {
+  width: 100%;
+  padding: 15px 12px;
+  border-radius: 4px;
+  background-color: #f7f7f7;
+  border: solid 0.5px #d0d0d0;
+  color: #9b9b9b;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  -webkit-appearance: none;
+}
+/* line 95, ../sass/pages/_home.scss */
+.page-home .form-tabs .tab-content form .option {
+  width: 28%;
+  float: left;
+  margin-right: 10px;
+  position: relative;
+}
+/* line 101, ../sass/pages/_home.scss */
+.page-home .form-tabs .tab-content form .option .select-icon {
+  position: absolute;
+  top: 34px;
+  right: 15px;
+  color: #00adee;
+  font-size: 11px;
+}
+/* line 109, ../sass/pages/_home.scss */
+.page-home .form-tabs .tab-content form .option.habitaciones, .page-home .form-tabs .tab-content form .option.fecha {
+  width: 20.5%;
+}
+/* line 116, ../sass/pages/_home.scss */
+.page-home .form-tabs .tab-content form .option.fecha select {
+  text-transform: uppercase;
+  text-indent: 22px;
+  background-image: url(../img/tabs-icons/calendar.png);
+  background-repeat: no-repeat;
+  background-position: 9px 13px;
+}
+/* line 125, ../sass/pages/_home.scss */
+.page-home .form-tabs .tab-content form .option.mercado {
+  margin: 0;
 }
 
 /*!
