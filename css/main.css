@@ -32,7 +32,7 @@ ul {
 
 /* line 29, ../sass/base/_reset.scss */
 .right {
-  float: right;
+  float: right !important;
 }
 
 /* line 33, ../sass/base/_reset.scss */
@@ -42,7 +42,7 @@ ul {
 }
 
 /* line 1, ../sass/modules/_buttons.scss */
-.btn-blue {
+.btn-blue, .btn-border, .btn-border-white {
   text-transform: uppercase;
   font-size: 13px;
   font-weight: 600;
@@ -51,6 +51,62 @@ ul {
   background-color: #00adee;
   padding: 16px 30px;
   border-radius: 30px;
+  color: #ffffff;
+  border: none;
+  border: 1px solid #00adee;
+  transition: all 0.5s;
+}
+/* line 15, ../sass/modules/_buttons.scss */
+.btn-blue:hover, .btn-border:hover, .btn-border-white:hover {
+  color: #00adee;
+  background-color: transparent;
+}
+
+/* line 21, ../sass/modules/_buttons.scss */
+.btn-border, .btn-border-white {
+  color: #00adee;
+  background-color: transparent;
+  position: relative;
+}
+/* line 27, ../sass/modules/_buttons.scss */
+.btn-border.caret-right, .caret-right.btn-border-white {
+  padding-right: 40px;
+}
+/* line 30, ../sass/modules/_buttons.scss */
+.btn-border.caret-right:after, .caret-right.btn-border-white:after {
+  content: "\f105";
+  font-family: FontAwesome;
+  color: #00adee;
+  font-size: 20px;
+  position: absolute;
+  top: 11px;
+  right: 15px;
+  transition: all 0.5s;
+}
+/* line 42, ../sass/modules/_buttons.scss */
+.btn-border.caret-right:hover:after, .caret-right.btn-border-white:hover:after {
+  color: #ffffff;
+}
+/* line 49, ../sass/modules/_buttons.scss */
+.btn-border:hover, .btn-border-white:hover {
+  color: #ffffff;
+  background-color: #00adee;
+}
+
+/* line 56, ../sass/modules/_buttons.scss */
+.btn-border-white {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+/* line 62, ../sass/modules/_buttons.scss */
+.btn-border-white.caret-right:after {
+  color: #ffffff;
+}
+/* line 67, ../sass/modules/_buttons.scss */
+.btn-border-white:hover {
+  color: #ffffff;
+  background-color: #00adee;
+  border: 1px solid #00adee;
 }
 
 /* line 1, ../sass/partials/_header.scss */
@@ -138,7 +194,7 @@ header .header-main .menu .menu-links li a {
 header .header-main .content {
   width: 60%;
   margin: 0 auto;
-  margin-bottom: 80px;
+  margin-bottom: 70px;
 }
 /* line 95, ../sass/partials/_header.scss */
 header .header-main .content .heading {
@@ -162,6 +218,210 @@ header .header-main .content p {
 /* line 113, ../sass/partials/_header.scss */
 header .header-main .content p span {
   font-weight: 700;
+}
+
+/* line 1, ../sass/partials/_combo.scss */
+.combo {
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.4;
+  letter-spacing: 0.8px;
+  color: #6b7175;
+  position: relative;
+  padding-bottom: 40px;
+}
+/* line 11, ../sass/partials/_combo.scss */
+.combo.bg-gray:before {
+  content: "";
+  width: 100%;
+  height: 50%;
+  background: #f9f9f9;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+/* line 23, ../sass/partials/_combo.scss */
+.combo.bg-light-blue:before {
+  content: "";
+  width: 100%;
+  height: 52%;
+  position: absolute;
+  background: linear-gradient(to bottom, #075baa, #00adee);
+  bottom: 0;
+  left: 0;
+}
+/* line 34, ../sass/partials/_combo.scss */
+.combo .title {
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 0.9px;
+  color: #494949;
+  text-transform: uppercase;
+}
+/* line 43, ../sass/partials/_combo.scss */
+.combo .heading {
+  margin: 20px 0;
+  position: relative;
+}
+/* line 48, ../sass/partials/_combo.scss */
+.combo .heading .img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+/* line 54, ../sass/partials/_combo.scss */
+.combo .heading .title {
+  font-size: 21px;
+  letter-spacing: 1.2px;
+  color: #6b7175;
+  padding: 20px 0;
+  position: relative;
+}
+/* line 61, ../sass/partials/_combo.scss */
+.combo .heading .title:after {
+  content: "";
+  width: 46px;
+  height: 3px;
+  background-color: #00adee;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 23px);
+}
+/* line 73, ../sass/partials/_combo.scss */
+.combo .heading:before, .combo .heading:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 35%;
+  border-bottom: 1px dashed #000000;
+}
+/* line 83, ../sass/partials/_combo.scss */
+.combo .heading:after {
+  left: initial;
+  right: 0;
+}
+/* line 90, ../sass/partials/_combo.scss */
+.combo .heading.long:before, .combo .long.heading:after {
+  width: 31%;
+}
+/* line 97, ../sass/partials/_combo.scss */
+.combo .description {
+  max-width: 640px;
+  margin: 0 auto;
+  font-size: 17px;
+  line-height: 1.59;
+  letter-spacing: 0.9px;
+  color: #9b9b9b;
+  margin-bottom: 50px;
+}
+/* line 107, ../sass/partials/_combo.scss */
+.combo .discount {
+  position: absolute;
+  background-color: #39b5aa;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px 13px;
+  letter-spacing: 0px;
+  top: 15px;
+  left: -4px;
+}
+/* line 118, ../sass/partials/_combo.scss */
+.combo .discount:after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0px;
+  width: 15px;
+  height: 15px;
+  border-right: 15px solid #22756e;
+  border-bottom: 15px solid transparent;
+}
+/* line 132, ../sass/partials/_combo.scss */
+.combo .three-rows li {
+  width: 30%;
+  display: inline-block;
+  position: relative;
+}
+/* line 138, ../sass/partials/_combo.scss */
+.combo .three-rows li:hover .box-info {
+  background-color: #f7f7f7;
+  box-shadow: 0px 3px 17px 0px #00000014;
+}
+/* line 145, ../sass/partials/_combo.scss */
+.combo .three-rows li img {
+  max-width: 100%;
+  height: auto;
+}
+/* line 150, ../sass/partials/_combo.scss */
+.combo .three-rows li .box-info {
+  width: 75%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 15px;
+  transform: translateY(-50px);
+  transition: all 0.5s;
+}
+/* line 158, ../sass/partials/_combo.scss */
+.combo .three-rows li .box-info .title {
+  padding: 5px 0 10px;
+  margin-bottom: 10px;
+  position: relative;
+}
+/* line 163, ../sass/partials/_combo.scss */
+.combo .three-rows li .box-info .title:after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 1.2px;
+  bottom: 0;
+  left: calc(50% - 25px);
+  background-color: #00adee;
+}
+/* line 175, ../sass/partials/_combo.scss */
+.combo .three-rows li .box-info .subtitle {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.7px;
+  color: #39b5aa;
+  text-transform: uppercase;
+  margin: 15px 0px 10px;
+}
+/* line 184, ../sass/partials/_combo.scss */
+.combo .three-rows li .box-info .desc {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px dashed #9b9b9b;
+}
+/* line 198, ../sass/partials/_combo.scss */
+.combo .four-rows li {
+  display: inline-block;
+  width: 23%;
+  position: relative;
+}
+/* line 203, ../sass/partials/_combo.scss */
+.combo .four-rows li .box-info {
+  background-color: #ffffff;
+  padding: 15px;
+  max-width: 240px;
+  margin: 0 auto;
+  min-height: 289px;
+}
+/* line 210, ../sass/partials/_combo.scss */
+.combo .four-rows li .box-info .title {
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px dashed #494949;
+}
+/* line 216, ../sass/partials/_combo.scss */
+.combo .four-rows li .box-info .desc {
+  font-size: 14px;
+}
+/* line 219, ../sass/partials/_combo.scss */
+.combo .four-rows li .box-info .desc.bold {
+  font-weight: 700;
+  margin-bottom: 30px;
 }
 
 /* line 5, ../sass/pages/_home.scss */
@@ -298,13 +558,22 @@ header .header-main .content p span {
 /* line 65, ../sass/pages/_home.scss */
 .page-home .form-tabs .tab-content {
   width: 100%;
-  height: 78px;
+  overflow: hidden;
   background-color: white;
   transform: translatey(-3px);
   padding: 15px;
+  box-shadow: 0px 3px 13px 0px #0000002e;
 }
-/* line 74, ../sass/pages/_home.scss */
-.page-home .form-tabs .tab-content form label {
+/* line 73, ../sass/pages/_home.scss */
+.page-home .form-tabs .tab-content .option {
+  width: 28%;
+  float: left;
+  margin-right: 10px;
+  position: relative;
+  margin-bottom: 15px;
+}
+/* line 80, ../sass/pages/_home.scss */
+.page-home .form-tabs .tab-content .option label {
   display: block;
   font-size: 11px;
   font-weight: 700;
@@ -312,8 +581,12 @@ header .header-main .content p span {
   color: #6b7175;
   text-transform: uppercase;
 }
-/* line 83, ../sass/pages/_home.scss */
-.page-home .form-tabs .tab-content form select {
+/* line 89, ../sass/pages/_home.scss */
+.page-home .form-tabs .tab-content .option .select-icon {
+  position: relative;
+}
+/* line 92, ../sass/pages/_home.scss */
+.page-home .form-tabs .tab-content .option .select-icon select {
   width: 100%;
   padding: 15px 12px;
   border-radius: 4px;
@@ -324,36 +597,94 @@ header .header-main .content p span {
   letter-spacing: 0.5px;
   -webkit-appearance: none;
 }
-/* line 95, ../sass/pages/_home.scss */
-.page-home .form-tabs .tab-content form .option {
-  width: 28%;
-  float: left;
-  margin-right: 10px;
-  position: relative;
-}
-/* line 101, ../sass/pages/_home.scss */
-.page-home .form-tabs .tab-content form .option .select-icon {
-  position: absolute;
-  top: 34px;
-  right: 15px;
+/* line 104, ../sass/pages/_home.scss */
+.page-home .form-tabs .tab-content .option .select-icon:after {
+  content: "\f078";
+  /* this is your text. You can also use UTF-8 character codes as I do here */
+  font-family: FontAwesome;
   color: #00adee;
   font-size: 11px;
+  position: absolute;
+  top: 17px;
+  right: 12px;
 }
-/* line 109, ../sass/pages/_home.scss */
-.page-home .form-tabs .tab-content form .option.habitaciones, .page-home .form-tabs .tab-content form .option.fecha {
+/* line 118, ../sass/pages/_home.scss */
+.page-home .form-tabs .tab-content .option .submit-btn {
+  position: relative;
+}
+/* line 121, ../sass/pages/_home.scss */
+.page-home .form-tabs .tab-content .option .submit-btn input {
+  padding-right: 40px;
+}
+/* line 125, ../sass/pages/_home.scss */
+.page-home .form-tabs .tab-content .option .submit-btn:after {
+  content: "\f105";
+  font-family: FontAwesome;
+  color: #ffffff;
+  font-size: 23px;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  transition: all 0.5s;
+}
+/* line 137, ../sass/pages/_home.scss */
+.page-home .form-tabs .tab-content .option .submit-btn:hover:after {
+  color: #00adee;
+}
+/* line 145, ../sass/pages/_home.scss */
+.page-home .form-tabs .tab-content .option.habitaciones, .page-home .form-tabs .tab-content .option.fecha {
   width: 20.5%;
 }
-/* line 116, ../sass/pages/_home.scss */
-.page-home .form-tabs .tab-content form .option.fecha select {
+/* line 152, ../sass/pages/_home.scss */
+.page-home .form-tabs .tab-content .option.fecha select {
   text-transform: uppercase;
   text-indent: 22px;
   background-image: url(../img/tabs-icons/calendar.png);
   background-repeat: no-repeat;
   background-position: 9px 13px;
 }
-/* line 125, ../sass/pages/_home.scss */
-.page-home .form-tabs .tab-content form .option.mercado {
+/* line 162, ../sass/pages/_home.scss */
+.page-home .form-tabs .tab-content .option.mercado {
+  margin-right: 0;
+}
+/* line 166, ../sass/pages/_home.scss */
+.page-home .form-tabs .tab-content .option.habitacion {
   margin: 0;
+  width: 49.6%;
+}
+/* line 171, ../sass/pages/_home.scss */
+.page-home .form-tabs .tab-content .option.habitacion .select-icon {
+  width: 17%;
+  display: inline-block;
+  margin-right: 6px;
+}
+/* line 176, ../sass/pages/_home.scss */
+.page-home .form-tabs .tab-content .option.habitacion .select-icon span {
+  font-size: 20px;
+}
+/* line 189, ../sass/pages/_home.scss */
+.page-home .banner {
+  width: 100%;
+  height: 360px;
+  background: #39b5aa;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 75px;
+  margin-bottom: 20px;
+}
+/* line 198, ../sass/pages/_home.scss */
+.page-home .banner .heading {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+/* line 205, ../sass/pages/_home.scss */
+.page-home .banner .description {
+  font-size: 21px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  margin-bottom: 50px;
 }
 
 /*!

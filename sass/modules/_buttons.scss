@@ -7,4 +7,66 @@
     background-color: $light-blue;
     padding: 16px 30px;
     border-radius: 30px;
+    color: $white;
+    border: none;
+    border: 1px solid $light-blue;
+    transition: all 0.5s;
+    
+    &:hover{
+        color: $light-blue;
+        background-color: transparent;
+    }
+}
+
+.btn-border{
+    @extend .btn-blue;
+    color: $light-blue;
+    background-color: transparent;
+    position: relative;
+    
+    &.caret-right{
+        padding-right: 40px;
+        
+        &:after{
+        content: "\f105";
+        font-family: FontAwesome;
+        color: $light-blue;
+        font-size: 20px;
+        position:absolute;
+        top: 11px;
+        right: 15px;
+        transition: all 0.5s;
+    }
+                    
+        &:hover{
+            &:after{
+                color: $white;
+            }    
+        }
+        
+    }
+    
+    &:hover{
+        color: $white;
+        background-color: $light-blue;
+    }
+    
+}
+
+.btn-border-white{
+    @extend .btn-border;
+     color: $white;
+    border: 1px solid $white;
+    
+     &.caret-right{
+        &:after{
+            color :$white;
+        }
+    }
+    
+    &:hover{
+        color: $white;
+        background-color: $light-blue;
+        border: 1px solid $light-blue;
+    }
 }

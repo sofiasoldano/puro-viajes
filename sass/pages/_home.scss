@@ -62,15 +62,21 @@
             
         }
         
-        .tab-content{
-            width: 100%;
-            height: 78px;
-            background-color: white;
-            transform: translatey(-3px);
-            padding: 15px;
-            
-            form{
-                
+    .tab-content{
+        width: 100%;
+        overflow: hidden;
+        background-color: white;
+        transform: translatey(-3px);
+        padding: 15px;
+        box-shadow: 0px 3px 13px 0px #0000002e;
+
+            .option{
+                width: 28%;
+                float: left;
+                margin-right: 10px;
+                position: relative;
+                margin-bottom: 15px;
+
                 label{
                     display: block;
                     font-size: 11px;
@@ -79,58 +85,129 @@
                     color: $dark-gray;
                     text-transform: uppercase;
                 }
-                
-                select{
-                    width: 100%;
-                    padding: 15px 12px;
-                    border-radius: 4px;
-                    background-color: #f7f7f7;
-                    border: solid 0.5px #d0d0d0;
-                    color: $light-gray;
-                    font-size: 12px;
-                    letter-spacing: 0.5px;
-                    -webkit-appearance: none;
-                }
-                
-                .option{
-                    width: 28%;
-                    float: left;
-                    margin-right: 10px;
+
+                .select-icon{
                     position: relative;
-                    
-                    .select-icon{
-                        position: absolute;
-                        top: 34px;
-                        right: 15px;
+
+                    select{
+                        width: 100%;
+                        padding: 15px 12px;
+                        border-radius: 4px;
+                        background-color: #f7f7f7;
+                        border: solid 0.5px #d0d0d0;
+                        color: $light-gray;
+                        font-size: 12px;
+                        letter-spacing: 0.5px;
+                        -webkit-appearance: none;
+                    }
+
+                     &:after{
+
+                        content: "\f078";  /* this is your text. You can also use UTF-8 character codes as I do here */
+                        font-family: FontAwesome;
                         color: #00adee;
                         font-size: 11px;
+                        position:absolute;
+                        top: 17px;
+                        right: 12px;
+
+                    }
+
+                }
+                
+                .submit-btn{
+                    position: relative;
+                    
+                    input{
+                        padding-right: 40px;
                     }
                     
-                    &.habitaciones{
-                        width: 20.5%;
+                    &:after{
+                        content: "\f105";
+                        font-family: FontAwesome;
+                        color: $white;
+                        font-size: 23px;
+                        position:absolute;
+                        top: 10px;
+                        right: 15px;
+                        transition: all 0.5s;
                     }
                     
-                    &.fecha{
-                        @extend .habitaciones;
+                    &:hover{
+                        &:after{
+                            color: $light-blue;
+                        }    
+                    }
+
+                }
+
+
+                &.habitaciones{
+                    width: 20.5%;
+                }
+
+                &.fecha{
+                    @extend .habitaciones;
+
+                    select{
+                        text-transform: uppercase;
+                        text-indent: 22px;
+                        background-image: url(../img/tabs-icons/calendar.png);
+                        background-repeat: no-repeat;
+                        background-position: 9px 13px;
+
+                    }
+                }
+
+                &.mercado{
+                    margin-right: 0;
+                }
+                
+                &.habitacion{
+                    margin: 0;
+                    width: 49.6%;
+                    
+                    
+                    .select-icon{
+                        width: 17%;
+                        display: inline-block;
+                        margin-right: 6px;
                         
-                        select{
-                            text-transform: uppercase;
-                            text-indent: 22px;
-                            background-image: url(../img/tabs-icons/calendar.png);
-                            background-repeat: no-repeat;
-                            background-position: 9px 13px;
+                        span{
+                            font-size: 20px;
                         }
                     }
                     
-                    &.mercado{
-                        margin: 0;
-                    }
-                    
                 }
+
             }
-            
+
+        }
+
+    }
+    
+    .banner{
+        width: 100%;
+        height: 360px;
+        background: $green;
+        text-align: center;
+        color: $white;
+        padding-top: 75px;
+        margin-bottom: 20px;
+        
+        .heading{
+            font-size: 30px;
+            font-weight: $bold;
+            letter-spacing: 0.3px;
+            text-transform: uppercase;
         }
         
+        .description{
+            font-size: 21px;
+            font-weight: $medium;
+            letter-spacing: 1.2px;
+            margin-bottom: 50px;
+        }
     }
     
 }

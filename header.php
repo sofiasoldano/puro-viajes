@@ -55,7 +55,7 @@
                     <div class="content">
                         <h1 class="heading">Oferta Especial NBV</h1>
                         <p><span>Walt Disney World</span> - Descuentos en planes de comida y habitaciones en hoteles esconómicos</p>
-                        <a class="btn-blue">Ver oferta</a>
+                        <a href="#" class="btn-blue">Ver oferta</a>
                     </div>
                 </div>
             </div>
