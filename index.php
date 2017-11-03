@@ -6,12 +6,12 @@
         <div class="row">
             <div class="col-md-12">
                 <ul class="nav nav-pills">
-                    <li class="active"><a data-toggle="pill" class="admisiones" href="#admisiones">Admisiones</a></li>
+                    <li><a data-toggle="pill" class="admisiones" href="#admisiones">Admisiones</a></li>
                     <li><a data-toggle="pill"  class="aereos" href="#aereos">Aereos</a></li>
                     <li><a data-toggle="pill" class="autos" href="#autos">Autos</a></li>
                     <li><a data-toggle="pill"  class="circuitos" href="#circuitos">Circuitos</a></li>
                     <li><a data-toggle="pill"  class="cruceros" href="#cruceros">Cruceros</a></li>
-                    <li><a data-toggle="pill"  class="hosteleria" href="#hosteleria">Hosteleria</a></li>
+                    <li class="active"><a data-toggle="pill"  class="hosteleria" href="#hosteleria">Hosteleria</a></li>
                     <li><a data-toggle="pill"  class="disney" href="#disney">Disney</a></li>
                     <li><a data-toggle="pill"  class="universal" href="#universal">Universal</a></li>
                     <li><a data-toggle="pill"  class="paquetes" href="#paquetes">Paquetes</a></li>
@@ -21,7 +21,7 @@
                 </ul>
                 
                   <div class="tab-content">
-                    <div id="admisiones" class="tab-pane fade in active">
+                    <div id="admisiones" class="tab-pane fade in">
                         <form>
                             <div class="option ciudad">
                                 <label for="ciudad">Ciudad</label>
@@ -346,7 +346,7 @@
                             
                         </form>
                     </div>
-                    <div id="hosteleria" class="tab-pane fade">
+                    <div id="hosteleria" class="tab-pane fade in active">
                         <form>
                             <div class="option ciudad">
                                 <label for="ciudad">Ciudad</label>
@@ -887,9 +887,9 @@
                             <a href="#"><div class="discount">Usd 890.-</div>
                             <img src="http://via.placeholder.com/240x160"></a>
                             <a href="#"><div class="box-info">
-                                <div class="title">Tailandia</div>
-                                <div class="desc">10 días visitando:</div>
-                                <div class="desc bold">Bangkok - Rio Kwai - Ayutthaya - Lopburi - Phitsanulok - Sukhotai - Chiang Rai - Chiang Mai</div>
+                                <div class="title">Egipto</div>
+                                <div class="desc">8 días visitando:</div>
+                                <div class="desc bold">El Cairo - Aswan - Kom Ombo - Edfu - Esna - Luxor - El Cairo</div>
                                 <a href="#" class="btn-border caret-right">Ver oferta</a>
                                 </div></a>
                         </li>
@@ -897,9 +897,9 @@
                             <a href="#"><div class="discount">Usd 890.-</div>
                             <img src="http://via.placeholder.com/240x160"></a>
                             <a href="#"><div class="box-info">
-                                <div class="title">Tailandia</div>
-                                <div class="desc">10 días visitando:</div>
-                                <div class="desc bold">Bangkok - Rio Kwai - Ayutthaya - Lopburi - Phitsanulok - Sukhotai - Chiang Rai - Chiang Mai</div>
+                                <div class="title">Dubai</div>
+                                <div class="desc">4 días visitando:</div>
+                                <div class="desc bold">Dubai</div>
                                 <a href="#" class="btn-border caret-right">Ver oferta</a>
                                 </div></a>
                         </li>
@@ -907,9 +907,9 @@
                             <a href="#"><div class="discount">Usd 890.-</div>
                             <img src="http://via.placeholder.com/240x160"></a>
                             <a href="#"><div class="box-info">
-                                <div class="title">Tailandia</div>
-                                <div class="desc">10 días visitando:</div>
-                                <div class="desc bold">Bangkok - Rio Kwai - Ayutthaya - Lopburi - Phitsanulok - Sukhotai - Chiang Rai - Chiang Mai</div>
+                                <div class="title">Capitales imperiales</div>
+                                <div class="desc">9 días visitando:</div>
+                                <div class="desc bold">Viena - Budapest - Praga</div>
                                 <a href="#" class="btn-border caret-right">Ver oferta</a>
                                 </div></a>
                         </li>

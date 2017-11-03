@@ -12,7 +12,7 @@
 
 <body class="page-<?php echo $page_name; ?>">
 <header>
-    <div class="header-info">
+    <div class="header-info hidden-xs">
        <div class="container">
             <div class="row">
                 <div class="col-sm-3 col-lg-2">
@@ -42,6 +42,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
+                    <div class="logo-mobile">
+                        <img src="img/logo-puro-viajes.png" class="logo">
+                    </div>
                     <div class="menu">
                         <img src="img/logo-puro-viajes.png" class="logo">
                         <ul class="menu-links">

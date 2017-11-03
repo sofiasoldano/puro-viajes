@@ -8,6 +8,11 @@ header {
         font-size: 10px;
         letter-spacing: 0.1px;
         padding: 11px 0;
+        display: none;
+        
+        @include respond-to("medium"){
+            display: block;
+        }
 
         .tel-info{
 
@@ -56,10 +61,27 @@ header {
         
         .header-bg{
             position: absolute;
+            height: 535px;
+            max-width: initial;
+            width: auto;
+            left: calc(50% - 787px);
+        }
+        
+        .logo-mobile{
+            margin: 40px 0;
+            
+            @include respond-to("medium"){
+                display: none;;
+            }
         }
         
         .menu{
             padding: 20px 0;
+            display: none;
+        
+            @include respond-to("medium"){
+                display: block;
+            }
             
             .logo{
                 position: absolute;
@@ -88,18 +110,26 @@ header {
         }
         
         .content{
-            width: 60%;
             margin: 0 auto;
             margin-bottom: 70px;
+            
+            @include respond-to("large"){
+                width: 60%;
+            }
             
             .heading{
                 margin: 0;
                 font-size: 50px;
-                font-weight: 800;
+                font-weight: $extra-bold;
                 letter-spacing: 2.7px;
                 border-bottom: 1px solid;
                 padding: 0 0 12px;
                 margin-bottom: 15px;   
+                
+                @include respond-to("xsmall"){
+                    font-size: 24px;
+                    letter-spacing: 1.3px;
+                }
             }
             
             p{
@@ -109,6 +139,12 @@ header {
                 letter-spacing: 1.1px;
                 text-transform: uppercase;
                 margin-bottom: 20px;
+                
+                @include respond-to("xsmall"){
+                    font-size: 13px;
+                    line-height: 1.15;
+                    letter-spacing: 0.7px;
+                }
                 
                 span{
                     font-weight: $bold;

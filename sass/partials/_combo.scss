@@ -7,6 +7,7 @@
     position: relative;
     padding-bottom: 40px;
     
+    
     &.bg-gray{
         &:before{
             content: "";
@@ -133,6 +134,11 @@
             width: 30%;
             display: inline-block;
             position: relative;
+            vertical-align: top;
+            
+             @include respond-to("xsmall"){
+                width: 100%;
+            }
             
             &:hover{
                 .box-info{
@@ -194,11 +200,28 @@
     }
     
      .four-rows{
+         padding-bottom: 40px;
          
          li{
              display: inline-block;
              width: 23%;
              position: relative;
+             vertical-align: top;
+             
+              @include respond-to("xsmall"){
+                    width: 100%;
+                }
+             
+             &:hover{
+                .box-info{
+                    box-shadow: 0px 3px 17px 0px #00000069;
+                }
+            }
+             
+             img{
+                max-width: 100%;
+                height: auto;
+            }
              
              .box-info{
                 background-color: $white;
@@ -206,6 +229,7 @@
                 max-width: 240px;
                 margin: 0 auto;
                 min-height: 289px;
+                transition: all 0.5s;
                  
                  .title{
                      padding-bottom: 15px;
@@ -221,10 +245,18 @@
                          margin-bottom: 30px;
                      }
                  }
+                 
+                 .btn-border{
+                    position: absolute;
+                    display: block;
+                    left: calc(50% - 77px);
+                    bottom: 40px;
+                 }
              }
              
          }
         
     }
+    
     
 }
