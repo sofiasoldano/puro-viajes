@@ -152,6 +152,13 @@ header {
             
             }
             
+            .btn-blue{
+                
+                &:hover{
+                    background-color: rgba(0, 0, 0, 0.20);
+                }
+            }
+            
         }
         
     }

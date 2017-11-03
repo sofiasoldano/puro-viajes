@@ -366,6 +366,10 @@ header .header-main .content p {
 header .header-main .content p span {
   font-weight: 700;
 }
+/* line 157, ../sass/partials/_header.scss */
+header .header-main .content .btn-blue:hover, header .header-main .content .btn-border:hover, header .header-main .content .btn-border-white:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
 
 /* line 1, ../sass/partials/_combo.scss */
 .combo {
@@ -501,7 +505,7 @@ header .header-main .content p span {
 /* line 144, ../sass/partials/_combo.scss */
 .combo .three-rows li:hover .box-info {
   background-color: #f7f7f7;
-  box-shadow: 0px 3px 17px 0px #00000014;
+  box-shadow: 0px 3px 17px 0px rgba(0, 0, 0, 0.07843);
 }
 /* line 151, ../sass/partials/_combo.scss */
 .combo .three-rows li img {
@@ -567,7 +571,7 @@ header .header-main .content p span {
 }
 /* line 216, ../sass/partials/_combo.scss */
 .combo .four-rows li:hover .box-info {
-  box-shadow: 0px 3px 17px 0px #00000069;
+  box-shadow: 0px 3px 17px 0px rgba(0, 0, 0, 0.41176);
 }
 /* line 221, ../sass/partials/_combo.scss */
 .combo .four-rows li img {
@@ -742,7 +746,7 @@ header .header-main .content p span {
   background-color: white;
   transform: translatey(-3px);
   padding: 15px;
-  box-shadow: 0px 3px 13px 0px #0000002e;
+  box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.1803);
 }
 /* line 74, ../sass/pages/_home.scss */
 .page-home .form-tabs .tab-content .option {

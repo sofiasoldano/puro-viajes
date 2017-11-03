@@ -820,32 +820,32 @@
                         <li>
                             <a href="#"><div class="discount">10% OFF</div>
                             <img src="http://via.placeholder.com/320x240"></a>
-                            <a href="#"><div class="box-info">
+                            <div class="box-info">
                                 <div class="title">Mexico</div>
                                 <p class="subtitle">1 enero - 15 enero 2017</p>
                                 <div class="desc">Lorem ipsum dolor sit amet, consec adipiscing elit.</div>
                                 <a href="#" class="btn-border caret-right">Ver oferta</a>
-                                </div></a>
+                            </div>
                         </li>
                         <li>
                             <a href="#"><div class="discount">10% OFF</div>
                             <img src="http://via.placeholder.com/320x240"></a>
-                            <a href="#"><div class="box-info">
+                            <div class="box-info">
                                 <div class="title">Cuba</div>
                                 <p class="subtitle">5 enero - 5 feb 2017</p>
                                 <div class="desc">Lorem ipsum dolor sit amet, consec adipiscing elit.</div>
                                 <a href="#" class="btn-border caret-right">Ver oferta</a>
-                                </div></a>
+                            </div>
                         </li>
                         <li>
                             <a href="#"><div class="discount">10% OFF</div>
                             <img src="http://via.placeholder.com/320x240"></a>
-                            <a href="#"><div class="box-info">
+                            <div class="box-info">
                                 <div class="title">Republica dominicana</div>
                                 <p class="subtitle">5 enero - 5 feb 2017</p>
                                 <div class="desc">Lorem ipsum dolor sit amet, consec adipiscing elit.</div>
                                 <a href="#" class="btn-border caret-right">Ver oferta</a>
-                                </div></a>
+                            </div>
                         </li>
                     </ul>
                     
@@ -876,42 +876,42 @@
                         <li>
                             <a href="#"><div class="discount">Usd 890.-</div>
                             <img src="http://via.placeholder.com/240x160"></a>
-                            <a href="#"><div class="box-info">
+                            <div class="box-info">
                                 <div class="title">Tailandia</div>
                                 <div class="desc">10 días visitando:</div>
                                 <div class="desc bold">Bangkok - Rio Kwai - Ayutthaya - Lopburi - Phitsanulok - Sukhotai - Chiang Rai - Chiang Mai</div>
                                 <a href="#" class="btn-border caret-right">Ver oferta</a>
-                                </div></a>
+                            </div>
                         </li>
                         <li>
                             <a href="#"><div class="discount">Usd 890.-</div>
                             <img src="http://via.placeholder.com/240x160"></a>
-                            <a href="#"><div class="box-info">
+                            <div class="box-info">
                                 <div class="title">Egipto</div>
                                 <div class="desc">8 días visitando:</div>
                                 <div class="desc bold">El Cairo - Aswan - Kom Ombo - Edfu - Esna - Luxor - El Cairo</div>
                                 <a href="#" class="btn-border caret-right">Ver oferta</a>
-                                </div></a>
+                            </div>
                         </li>
                         <li>
                             <a href="#"><div class="discount">Usd 890.-</div>
                             <img src="http://via.placeholder.com/240x160"></a>
-                            <a href="#"><div class="box-info">
+                            <div class="box-info">
                                 <div class="title">Dubai</div>
                                 <div class="desc">4 días visitando:</div>
                                 <div class="desc bold">Dubai</div>
                                 <a href="#" class="btn-border caret-right">Ver oferta</a>
-                                </div></a>
+                            </div>
                         </li>
                         <li>
                             <a href="#"><div class="discount">Usd 890.-</div>
                             <img src="http://via.placeholder.com/240x160"></a>
-                            <a href="#"><div class="box-info">
+                            <div class="box-info">
                                 <div class="title">Capitales imperiales</div>
                                 <div class="desc">9 días visitando:</div>
                                 <div class="desc bold">Viena - Budapest - Praga</div>
                                 <a href="#" class="btn-border caret-right">Ver oferta</a>
-                                </div></a>
+                            </div>
                         </li>
 
                     </ul>
