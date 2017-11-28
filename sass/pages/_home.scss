@@ -3,27 +3,72 @@
 
     .form-tabs{
         
+        .container{
+            @include respond-to("xsmall"){
+                padding: 0;
+                
+                .row{
+                    margin: 0;
+                    
+                    .col-md-12{
+                        padding: 0;
+                    }
+                }
+            }
+        }
+        
+        
+        .scroll-mobile{
+            @include respond-to("xsmall"){
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+        }
+        
         .nav-pills{
             text-align: center;
+            
+            @include respond-to("xsmall"){
+                text-align: left;
+                height: 50px;
+                width: max-content;
+            }
         
             li{
-                width: 7%;
+                width: 8%;
                 background-color: $white;
                 color: $dark-gray;
-                border-radius: 5px;
-                margin: 0 4px;
+                border-radius: 0;
+                margin: 0 -2px;
                 float: none;
                 display: inline-block;
                 
+                @include respond-to("xsmall"){
+                    width: 65px;
+                }
+                
+                @include respond-to("medium"){
+                    width: 7%;
+                    border-radius: 5px;
+                    margin: 0 4px;
+                }
+                
                 a{
                     text-transform: uppercase;
-                    font-size: 10px;
                     font-weight: $medium;
                     letter-spacing: -0.3px;
                     padding: 10px 0;
                     padding-top: 40px;
                     background-repeat: no-repeat;
-                    background-position: 50% 30%;
+                    background-position: 50% 50%;
+                    background-size: 50px;
+                    font-size: 0;
+                    
+                    @include respond-to("medium"){
+                        font-size: 10px;
+                        background-position: 50% 27%;
+                        background-size: 40px;
+                    }
                     
                     &.admisiones{background-image: url(../img/tabs-icons/admisiones.png);}
                     &.aereos{background-image: url(../img/tabs-icons/aereos.png);}
@@ -42,7 +87,13 @@
                 &.active{
                     
                     a{
-                    background-color: $light-blue;
+                        border-radius: 0;
+                        background-color: $blue;
+                    
+                        @include respond-to("medium"){
+                            border-radius: 4px;
+                        }
+                    
                          &.admisiones{background-image: url(../img/tabs-icons/admisiones-active.png);}
                         &.aereos{background-image: url(../img/tabs-icons/aereos-active.png);}
                         &.autos{background-image: url(../img/tabs-icons/autos-active.png);}
@@ -66,25 +117,34 @@
     .tab-content{
         width: 100%;
         overflow: hidden;
-        background-color: white;
+        background-color: $blue;
         transform: translatey(-3px);
         padding: 15px;
         box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.1803);
 
             .option{
-                width: 28%;
+                width: 100%;
                 float: left;
                 margin-right: 10px;
                 position: relative;
                 margin-bottom: 15px;
+                
+                @include respond-to("medium"){
+                    width: 27%;
+                }
+                
+                @include respond-to("large"){
+                    width: 28%;
+                }
 
                 label{
                     display: block;
                     font-size: 11px;
                     font-weight: $bold;
                     letter-spacing: 0.6px;
-                    color: $dark-gray;
+                    color: $white;
                     text-transform: uppercase;
+                    text-align: left;
                 }
 
                 .select-icon{
@@ -95,7 +155,7 @@
                         padding: 15px 12px;
                         border-radius: 4px;
                         background-color: #f7f7f7;
-                        border: solid 0.5px #d0d0d0;
+                        border: none;
                         color: $light-gray;
                         font-size: 12px;
                         letter-spacing: 0.5px;
@@ -106,7 +166,7 @@
 
                         content: "\f078";  /* this is your text. You can also use UTF-8 character codes as I do here */
                         font-family: FontAwesome;
-                        color: #00adee;
+                        color: $blue;
                         font-size: 11px;
                         position:absolute;
                         top: 17px;
@@ -118,6 +178,14 @@
                 
                 .submit-btn{
                     position: relative;
+                    width: 127px;
+                    margin: 0 auto;
+                    margin-top: 15px;
+                    
+                    @include respond-to("medium"){
+                        float: right;
+                        margin: 0;
+                    }
                     
                     input{
                         padding-right: 40px;
@@ -144,7 +212,9 @@
 
 
                 &.habitaciones{
-                    width: 20.5%;
+                    @include respond-to("medium"){
+                        width: 20.5%;
+                    }
                 }
 
                 &.fecha{
@@ -166,13 +236,39 @@
                 
                 &.habitacion{
                     margin: 0;
-                    width: 49.6%;
+                    text-align: right;
+                   
+                    @include respond-to("medium"){
+                         width: 49.6%;
+                        text-align: left;
+                    }
                     
                     
                     .select-icon{
-                        width: 17%;
+                        width: 49%;
                         display: inline-block;
-                        margin-right: 6px;
+                        margin-bottom: 2%;
+                        
+                        @include respond-to("xxsmall"){
+                            width: 48%;
+                        }
+                        
+                        &:first-of-type{
+                            margin-right: 1%;
+                            
+                            @include respond-to("xxsmall"){
+                                margin-right: 2%;
+                            }
+                        }
+                        
+                        @include respond-to("medium"){
+                            margin-right: 6px;
+                            width: 20%;
+                        }
+
+                        @include respond-to("large"){
+                            width: 17%;
+                        }
                         
                         span{
                             font-size: 20px;
@@ -189,18 +285,19 @@
     
     .banner{
         width: 100%;
-        height: 360px;
-        background: $green;
+        min-height: 360px;
         text-align: center;
         color: $white;
-        padding-top: 75px;
+        padding: 100px 0;
         margin-bottom: 20px;
+        background-image: url(../img/Home-foto-SalidaGrupales.jpg);
         
         .heading{
             font-size: 30px;
             font-weight: $bold;
             letter-spacing: 0.3px;
             text-transform: uppercase;
+            margin-bottom: 20px;
         }
         
         .description{

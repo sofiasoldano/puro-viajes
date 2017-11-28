@@ -12,8 +12,8 @@ footer {
         
         &:before{
             content: "";
-            width: 96px;
-            height: 96px;
+            width: 104px;
+            height: 104px;
             border-radius: 90px;
             border: 1px solid $white;
             position: absolute;
@@ -28,46 +28,69 @@ footer {
         margin-bottom: 25px;
     }
     
-    .contact{
+    .contactanos{
+        margin: 50px 0px;
         
-        li{
-            margin: 15px 0;
-            
-            .fa-phone{
-                font-size: 15px;
-            }
-            
-            .title{
-                display: inline;
-                font-weight: $regular;
-                letter-spacing: 0.1px;
-                padding: 0 10px;
-                margin-bottom: 0;
+        @include respond-to("medium"){
+            margin: 0;
+        }
+
+        .contact{
+
+            li{
+                margin: 15px 0;
+
+                i{
+                    font-size: 19px;
+                }
+
+                .title{
+                    display: inline;
+                    font-weight: $regular;
+                    letter-spacing: 0.1px;
+                    padding: 0 10px;
+                    margin-bottom: 0;
+                }
             }
         }
     }
-    
-    form{
-        margin-top: 12px;
-        
-        input[type="email"]{
-            background-color: transparent;
-            color: $white;
-            border: 1px solid $white;
-            padding: 15px;
-            width: 61%;
-            margin-right: 10px;
-            border-radius: 4px;
+    .newsletter{
+        form{
+            margin-top: 12px;
+            text-align: center;
+            border-bottom: 1px solid;
+            padding-bottom: 25px;
 
-            &::placeholder{
-                color: $white;
-                font-size: 12px;
-                letter-spacing: 0.7px;
+            @include respond-to("medium"){
+                text-align: left;
+                border: 0;
+                padding: 0;
             }
-        }
 
-        .btn-border-white{
-            font-weight: $regular;
+            input[type="email"]{
+                background-color: transparent;
+                color: $white;
+                border: 1px solid $white;
+                padding: 15px;
+                width: 100%;
+                margin-right: 10px;
+                border-radius: 4px;
+                margin-bottom: 15px;
+
+                 @include respond-to("medium"){
+                    width: 61%;
+                }
+
+                &::placeholder{
+                    color: $white;
+                    font-size: 12px;
+                    letter-spacing: 0.7px;
+                }
+            }
+
+            .btn-border-white{
+                font-weight: $regular;
+            }
         }
     }
     
@@ -76,15 +99,30 @@ footer {
         line-height: 1.7;
         letter-spacing: 0.3px;
         margin-top: 40px;
+        text-align: center;
+        
+        .right{
+            margin-top: 20px;
+        }
         
         p{
             padding-top: 1px;
             margin-bottom: 0;
+            float: none !important;
         }
         
-        .left{
-            float: left;
-            margin-right: 10px;
+        @include respond-to("medium"){
+            text-align: left;
+            
+            .left{
+                float: left !important;
+                margin-right: 10px;
+            }
+            
+            .right{
+                float: right !important;
+                margin: 0;
+            }
         }
         
         .social{
@@ -93,7 +131,15 @@ footer {
             li{
                 display: inline;
                 margin: 0 5px;
-                font-size: 12px;
+                font-size: 16px;
+                
+                i{
+                    font-size: 19px;
+                }
+                
+                @include respond-to("medium"){
+                    font-size: 12px;
+                }
             }
         }
     }

@@ -3,10 +3,10 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="logo">
-                    <img src="img/logo-puro-viajes.png" width="96px">
+                    <img src="img/logo-puro-viajes.png" width="104px">
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 contactanos">
                 <h4 class="title">Contactanos</h4>
                 <ul class="contact">
                     <li>
@@ -27,7 +27,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 newsletter">
                 <h4 class="title">Newsletter</h4>
                 <p>Suscribite y recibi nuestras ofertas y novedades por mail.</p>
                 <form>
